@@ -1,0 +1,124 @@
+<div class="wrapper">
+  <div class="exam-details">
+    <div class="exam-instructions-card">
+      <div class="instruction-heading">
+        <h3 class="green-title">Exam Instructions</h3>
+      </div>
+      <!-- <hr [style]="{color: '#ed3238'}"/> -->
+      <div class="instructions">
+        <ol class="instruction-list">
+          <li>
+            Make sure that the picture and the exam number on the computer
+            screen are yours. if they are not yours report to the supervisor.
+          </li>
+          <li>
+            The examination consists of <strong>100 OBJECTIVE</strong> questions
+            and you are expected to answer all questions.
+          </li>
+          <li>
+            The duration of the examination is <strong>1 hour</strong> (60
+            minutes) and you can attempt the questions in any order you wish.
+          </li>
+          <li>
+            If you are not familiar with the use of a computer mouse, use the
+            <strong><q>A</q>,<q>B</q>,<q>C</q>,<q>D</q></strong> buttons on the
+            keyboard to <strong>select an answer</strong> and use the
+            <strong><q>N</q> & <q>P</q></strong> buttons on the keyboard to
+            navigate to <strong> Next and Previous question</strong>
+          </li>
+          <li>
+            If you are familiar with the mouse you can select, answers to the
+            next questions by clicking on the option, and you can move to any
+            question by clicking the question number at the bottom of the page.
+          </li>
+          <li>You are free to skip a question and come back to it later.</li>
+          <li>
+            Once a candidate submits his/her exam, it is not possible to go back
+            or undo the submission.
+          </li>
+          <li>
+            If your time is up, the examination will submit itself and you will
+            be logged out.
+          </li>
+          <li>
+            Click the <strong>Start Exam Button</strong> to begin your
+            examination.
+          </li>
+        </ol>
+        <div class="startExam">
+          <button class="startExamBtn" (click)="startExam()">Start Exam</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="candidate-information-card">
+      <div class="candidate-detail-heading">
+        <h3 class="green-title">Candidate Information</h3>
+      </div>
+      <!-- <hr [style]="{color: '#ed3238'}"/> -->
+
+      <div class="cand-info">
+        <div class="personal-detail">
+          <div class="candidate-personal-info">
+            <img
+              src="/assets/images/avatar.webp"
+              [alt]=""
+              width="150px"
+              height="150px"
+            />
+          </div>
+          <div>
+            <h3 [style]="{ margin: '10px 0px' }">Okoroafor Sunday Chinedu</h3>
+            <h3>{{ candidateID }}</h3>
+            <h4>Exam Paper(s)</h4>
+          </div>
+          <div></div>
+        </div>
+        <div class="exam-detail">
+          <p>Exam Name: <span>SUBJECTTEST1</span></p>
+          <p>Exam Session: <span>2</span></p>
+          <p>Exam Duration: <span>20 minute(s)</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="keyboard-shortcut">
+    <div class="keyboard-shortcut-card">
+      <div class="keyboard-shortcut-heading">
+        <p>Keyboard Shortcut</p>
+      </div>
+      <!-- <hr [style]="{color: '#ed3238'}"/> -->
+      <div class="keys">
+        <div class="left-side">
+          <div class="key">
+            <button class="nav-btn">A</button>
+            <p>Select Option A</p>
+          </div>
+          <div class="key">
+            <button class="nav-btn">C</button>
+            <p>Select Option C</p>
+          </div>
+          <div class="key">
+            <button class="nav-btn">N</button>
+            <p>--Next/ Forward</p>
+          </div>
+        </div>
+        <div class="right-side">
+          <div class="key">
+            <button class="nav-btn">B</button>
+            <p>Select Option B</p>
+          </div>
+          <div class="key">
+            <button class="nav-btn">D</button>
+            <p>Select Option D</p>
+          </div>
+          <div class="key">
+            <button class="nav-btn">P</button>
+            <p>--Previous/ Back</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,33 @@
+<div class="wrapper">
+  <div id="login-card">
+    <div class="head">
+      <!-- <h2 style="margin-bottom: 15px">RAPIDTEST</h2> -->
+      <div class="mt-2 mb-2">
+        <img id="logo" src="/assets/images/fitc-logo.png" alt="" /><br />
+      </div>
+    </div>
+    <form class="mt-5" #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+      <input
+        id="exam-number"
+        type="text"
+        name="exam-number"
+        ngModel
+        placeholder="Examination Number"
+      />
+
+      <input id="submit-btn" type="submit" value="Login" />
+
+      <p class="error-msg" *ngIf="error">{{ error }}</p>
+    </form>
+    <!-- <span
+      class="head"
+      [style]="{
+        color: '#ed3238',
+        'margin-top': '25%',
+        'font-weight': '600'
+      }"
+      >Trial Version</span
+    > -->
+    <p class="copy">Copyright &copy; 2022 Multilent Software. All rights reserved</p>
+  </div>
+</div>

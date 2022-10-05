@@ -1,0 +1,113 @@
+.exam-instructions-card,
+.candidate-information-card,
+.keyboard-shortcut-card{
+  border-radius: 3px;
+  border: 1px solid #ff6900;
+}
+
+.instruction-heading > h3,
+.candidate-detail-heading > h3,
+.keyboard-shortcut-heading{
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.keyboard-shortcut-heading > p{
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 5px;
+}
+
+.key, .keys{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 0px;
+}
+
+.keys{
+  justify-content: start !important;
+  margin-left: 300px;
+  gap: 105px !important;
+  padding: 16px !important;
+}
+
+
+.exam-instructions-card{
+  width: 60%;
+  background-color: #fff;
+}
+
+.candidate-information-card{
+  width:40%;
+  display: flex;
+  flex-direction: column;
+  height: 368px;
+  background-color: #fff;
+}
+
+.keyboard-shortcut{
+  padding: 0px 20px;
+}
+
+.keyboard-shortcut-card{
+  width: 100%;
+  height: 38vh;
+  background-color: #fff;
+}
+
+.cand-info{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  padding: 20px;
+}
+
+.exam-detail{
+  font-weight: bold;
+  color: #ed3238;
+}
+
+.personal-detail{
+  width: 30%;
+}
+
+.instructions{
+  padding: 20px 45px;
+}
+
+.exam-details{
+  margin: 25px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.startExam{
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.startExamBtn{
+  background-color: #ed3238;
+  color: #fff;
+  width: 150px;
+  height: 30px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-btn{
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 3px;
+  background-color: #ff6900;
+}

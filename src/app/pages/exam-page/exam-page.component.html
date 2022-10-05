@@ -1,0 +1,126 @@
+<ng-container (keyup)="onkeyUp($event)" *ngIf="currentQuestion">
+  <div class="wrapper">
+    <div class="question-container">
+      <div class="question">
+        <div class="single-question">
+          <span id="paper-title"
+            ><img
+              src="assets/images/images.jpg"
+              style="width: 30px; height: 30px"
+              alt="calculator"
+            />[{{ currentPaper }}] QUESTION {{ currentQuestionIndex + 1 }}</span
+          >
+          <hr />
+          <br />
+
+          <p>
+            {{ currentQuestionIndex + 1 }}.)
+            <span id="question-text">{{ currentQuestion.question }}</span>
+          </p>
+          <br />
+
+          <ul>
+            <li
+              [ngStyle]="{ 'margin-bottom': '10px', 'list-style-type': 'none' }"
+              *ngFor="let option of currentQuestion.options; let i = index"
+            >
+              <span class="option-label">{{ labels[i] }}</span>
+              <input
+                type="radio"
+                name="option"
+                (change)="setAnswer(option)"
+                [checked]="currentQuestion.response === option"
+              />
+              {{ option }}
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav">
+          <hr />
+          <button id="nav-btn" (click)="previousQuestion()">
+            Previous Question
+          </button>
+          <ng-container *ngFor="let question of allQuestion; let i = index">
+            <button
+              class="question-btn"
+              [ngClass]="
+                question.id === currentQuestion.id &&
+                allQuestion[i].response === ''
+                  ? 'blue-btn'
+                  : 'red-btn'
+              "
+              [ngClass]="allQuestion[i].response !== '' ? 'green-btn' : ''"
+              (click)="getQuestion(i)"
+            >
+              {{ i + 1 }}
+            </button>
+          </ng-container>
+          <button id="nav-btn" (click)="nextQuestion()">Next Question</button>
+        </div>
+      </div>
+      <div class="name">
+        <div class="candidate-header">
+          <div class="timer">
+            🕑 {{ minutes }}:<span>{{ !counting ? "00" : seconds$ }}</span>
+          </div>
+          <ng-container *ngIf="totalAnswered >= 5 || this.minutes <= 5">
+            <button class="end-exam-btn" (click)="endExam()">End Exam</button>
+          </ng-container>
+          <!-- <hr /> -->
+          <br />
+          <h4 style="color: #ff6900">Candidate Details</h4>
+        </div>
+        <div class="candidateDetails">
+          <img
+            src="/assets/images/avatar.webp"
+            style="width: 180px; height: 180px"
+            alt="candidate picture"
+          />
+          <br />
+
+          <h4
+            style="
+              color: #ff6900;
+              text-transform: uppercase;
+              margin-top: 5px;
+              font-weight: bold;
+            "
+          >
+            John Doe
+          </h4>
+          <br />
+          <h4 style="color: #ff6900">{{ candidateID }}</h4>
+          <br />
+          <h4>Seat NO.: 18</h4>
+          <br />
+          <h4>ATTEMPTED: {{ totalAnswered }} of {{ allQuestion.length }}</h4>
+          <h4 style="color: #ed3238">
+            {{ currentPaper }}
+          </h4>
+          <br />
+          <div
+            [style]="{
+              'margin-bottom': '20px'
+            }"
+          >
+            <h4 [style]="{ 'border-bottom': '1px solid #eee' }">
+              Total Questions Attempted: {{ totalAnswered }} of
+              {{ allQuestion.length }}
+            </h4>
+          </div>
+          <div class="paper-nav">
+            <ng-container *ngFor="let paper of papers; let i = index">
+              <button id="subject-nav" type="button" (click)="setPaper(paper)">
+                {{ paper }}
+              </button>
+              <br />
+            </ng-container>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav"></div>
+  </div>
+</ng-container>

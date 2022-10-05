@@ -1,0 +1,138 @@
+.candidateDetails {
+  background-color: white;
+  width: 100%;
+  padding: 10px;
+  height: fit-content;
+  margin-top: 5%;
+}
+
+.wrapper{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+}
+
+.name{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.end-exam-btn{
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: large;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #ed3238;
+}
+
+.red-btn{
+  background-color: #ed3238 !important;
+}
+
+.green-btn{
+  background-color: green !important;
+}
+
+.blue-btn{
+  background-color: blue !important;
+}
+
+.question-container {
+  display: flex;
+  gap: 23px;
+  margin-top: 3%;
+  padding: 0px 10px;
+}
+
+.question {
+  width: 85%;
+  padding-bottom: 30px;
+}
+
+.single-question {
+  background-color: white;
+  width: 100%;
+  padding-bottom: 35%;
+  overflow-y: scroll;
+  height: 600px;
+  padding: 10px;
+}
+.name {
+  display: flex;
+  flex-direction: column;
+}
+
+.question hr {
+  background-color: #60a824;
+}
+
+h3 {
+  color: #60a824;
+}
+
+.nav {
+  background-color: white;
+}
+
+.timer {
+  background-color: #ff6900;
+  border-radius: 3px;
+  color: white;
+  text-align: center;
+  margin-bottom: 5px;
+  padding: 10px;
+  border-bottom: 1px solid #ff6900;
+}
+
+#nav-btn {
+  background-color: #ff6900;
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 3px;
+  text-transform: uppercase;
+  margin: 40px 20px 25px 20px;
+}
+
+.question-btn {
+  border-radius: 50%;
+  color: white;
+  background-color: #ed3238;
+  border: none;
+  margin-right: 8px;
+  padding: 7px 10px;
+}
+
+.paper-nav{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 10px 0px;
+}
+
+#paper-title {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 19px;
+  color: #ed3238;
+  font-weight: 700;
+}
+
+#question-text {
+  font-size: 15px;
+  font-weight: 750;
+}
+
+#subject-nav {
+  padding: 10px 10px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff6900;
+  color: white;
+  width: 100%;
+}

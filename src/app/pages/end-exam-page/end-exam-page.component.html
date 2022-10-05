@@ -1,0 +1,26 @@
+<div class="wrapper">
+  <div class="top-bar">
+    <h3>EXAM ENDED</h3>
+    <button class="back-btn" (click)="backToLogin()">Back</button>
+  </div>
+  <div class="main">
+    <div class="cand-details">
+      <img
+        src="assets/images/avatar.webp"
+        alt=""
+        height="150px"
+        width="150px"
+      />
+      <h4 [style]="{ margin: '10px 0px' }">Okoroafor Sunday Chinedu</h4>
+      <br />
+      <h4>{{ candidateID }}</h4>
+      <br />
+      <p class="sit-no">Seat No: 18</p>
+      <br />
+      <p>You scored a total of {{ score }} out of {{ totalQuestions }}</p>
+    </div>
+    <div class="message">
+      <p>You have completed your examination, kindly leave the hall quietly.</p>
+    </div>
+  </div>
+</div>

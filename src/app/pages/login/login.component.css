@@ -1,0 +1,90 @@
+.head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 10%;
+}
+
+.error-msg{
+  color: red;
+  text-align: center;
+  margin: 10px;
+}
+
+.copy{
+  margin-top: 76px;
+  color: #ed3238;
+  text-align: center;
+  font-size: 12px;
+}
+
+.mt-2{
+  margin-top: 10px;
+}
+
+.mb-2{
+  margin-bottom: 10px;
+}
+
+.mt-5{
+  margin-top: 32px;
+}
+
+.mb-5{
+  margin-bottom: 32px;
+}
+
+.mt-3{
+  margin-top: 20px;
+}
+
+.mb-3{
+  margin-bottom: 20px;
+}
+
+#logo {
+  width: 140px;
+  height: 70px;
+}
+
+#login-card {
+  /* transform: translate(50%, 50%); */
+  background-color: #fff;
+  color: #000;
+  width: 400px;
+  padding: 20px;
+  border-radius: 8px;
+  border: none;
+  height: fit-content;
+  border: 1px solid #ed3238;
+}
+
+#exam-number {
+  width: 100%;
+  margin: 0px;
+  padding: 10px 10px;
+  height: 35px;
+  font-size: 14px;
+  border: 1px solid hsl(210, 4%, 90%);
+  outline: 1px solid #ed3238;
+}
+
+#submit-btn {
+  width: 100%;
+  height: 40px;
+  background-color: #ed3238;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+  margin-top:20px ;
+}
